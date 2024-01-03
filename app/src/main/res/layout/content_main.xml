@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_home_24_purple" />
+
+    <EditText
+        android:id="@+id/petAgeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Pet Age"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/petSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/petSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/petNameText" />
+
+    <EditText
+        android:id="@+id/petAllergiesText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Pet Allergies"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/petSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/petSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/petAgeText" />
+
+    <EditText
+        android:id="@+id/petPersonalityText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Pet Personality"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/petSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/petSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/petAllergiesText" />
+
+    <Spinner
+        android:id="@+id/petSpinner"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/petNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Pet Name"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/petSpinner"
+        app:layout_constraintStart_toStartOf="@+id/petSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/petSpinner" />
+
+    <Button
+        android:id="@+id/addPetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Add Pet"
+        app:layout_constraintEnd_toEndOf="@+id/petAgeText"
+        app:layout_constraintStart_toStartOf="@+id/petAgeText"
+        app:layout_constraintTop_toBottomOf="@+id/petPersonalityText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
