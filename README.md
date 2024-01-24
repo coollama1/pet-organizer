@@ -18,5 +18,33 @@ See below for functionality
 
 ## Creating New Pet
 
-![](images/)
+![](images/pet-organizer-adding-pet.gif)
+
+<br>
+Users may enter details for the pet into the respective fields and add the pet to the list. 
+Species, name, age, personality, and allergies may be selected or specified
+<br>
+
+<a name="editing-existing-pet"/>
+
+## Editing Existing Pet
+
+![](images/pet-organizer-editing-pet.gif)
+
+<br>
+Users may change details for the respective fields of the pet they select and edit the pet to persist changes. 
+Species is permanent and may not be edited
+<br>
+
+<a name="deleting-existing-pet"/>
+
+## Deleting Existing Pet
+
+![](images/pet-organizer-delete-pet.gif)
+
+<br>
+Users may select a pet to delete from list of pets. Once deleted, the information of the pet is permanently erased
+<br>
+
+
 
